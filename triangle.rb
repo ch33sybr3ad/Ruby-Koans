@@ -15,6 +15,8 @@
 #
 def triangle(a, b, c)
   sides = [a,b,c].sort
+  raise TriangleError if sides[0] <= 0
+  raise TriangleError if sides[0] + sides[1] <= sides[2]
   return :equilateral if sides.uniq.length == 1
   return :isosceles if sides.uniq.length == 2
   return :scalene
