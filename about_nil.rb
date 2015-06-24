@@ -33,6 +33,7 @@ class AboutNil < Neo::Koan
     # or
     #    obj == nil
     # Why?
+    # I think observabily .nil? and == nil are the same. I think .nil? is more readable 
   end
 
 end
